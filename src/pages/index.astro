@@ -1,6 +1,6 @@
 ---
 import Card from "../components/Card.astro";
-import Counter from "../components/Counter";
+import Counter from "../components/counter/Counter";
 import Layout from "../layouts/Layout.astro";
 import HeadValue from "../utils/HeadValue";
 ---
@@ -62,7 +62,7 @@ import HeadValue from "../utils/HeadValue";
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
-		<Counter client:visible />
+		<Counter defaultCounter={0} client:visible />
 	</main>
 </Layout>
 
