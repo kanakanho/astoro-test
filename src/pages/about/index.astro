@@ -1,10 +1,11 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Card from '../../components/Card.astro';
-import Counter from '../../components/Counter';
+import HeadValue from "@/utils/HeadValue";
+import Card from "../../components/Card.astro";
+import Counter from "../../components/Counter";
+import Layout from "../../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout headValue={HeadValue}>
 	<main>
 		<svg
 			class="astro-a"
