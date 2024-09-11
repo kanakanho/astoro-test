@@ -1,4 +1,4 @@
-import { useState, type ReactElement } from "react";
+import { type ReactElement, useState } from "react";
 import styles from "./Counter.module.scss";
 import Button from "./button/Button";
 

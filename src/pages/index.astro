@@ -1,4 +1,6 @@
 ---
+import Footer from "@/components/counter/footer/Footer";
+import Header from "@/components/counter/header/Header";
 import Card from "../components/Card.astro";
 import Counter from "../components/counter/Counter";
 import Layout from "../layouts/Layout.astro";
@@ -6,6 +8,7 @@ import HeadValue from "../utils/HeadValue";
 ---
 
 <Layout headValue={HeadValue}>
+	<Header />
 	<main>
 		<svg
 			class="astro-a"
@@ -64,6 +67,7 @@ import HeadValue from "../utils/HeadValue";
 		</ul>
 		<Counter defaultCounter={0} client:visible />
 	</main>
+	<Footer />
 </Layout>
 
 <style>
